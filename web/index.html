@@ -1,0 +1,94 @@
+<html lang="ru">
+
+<head>
+            <meta charset="UTF-8">
+            <link href="style.css" rel="stylesheet">
+            <meta name="keywords" content="Undertale, мерч, андертейл">
+            <meta name="description" content="Мерч по игре Undertale">
+            <meta name="author" content="Цыбарев Сергей">
+            <title>Фигурка Санс UNDERTALE SHOP</title>
+
+</head>
+
+<body background="ImagesProekt/bc2.jpg" >
+<header>
+<a name='top'><h1> <img src="ImagesProekt/heart.png" width="4%" alt="Сердце undertale"> UNDERTALE SHOP <img src="ImagesProekt/heart.png" width="4%" alt="Сердце undertale"> </h1></a>
+<p> Добро пожаловать в магазин <b>Undertale shop</b>.</p>
+<p> Здесь вы можете купить качественный мерч по игре Undertale.</p>
+<p><b> Не теряй решимости!</b></p>
+<hr>
+<div class="buttons">
+  <button id="show-favorites-btn">Показать избранное</button>
+  <button id="show-figura">Показать Фигурки</button>
+  <button id="show-other">Показать остальное</button>
+</div>
+<div class = "slider">
+          <input type="range" min="500" max="2300" value="500" id="priceSlider">
+          <p>Цена: <span id="priceValue">500</span></p>
+      </div>
+</header>
+
+<main>
+  <section>
+<br>
+<div class="products">
+<div class="product" data-favorite="false" data-figura="true" data-other="false" data-price='700'>
+<img src="ImagesProekt/Figura.png" width="20%" alt="Фигурка" >
+<h1> Фигурка "Санс Undertale"</h1>
+<h2> Цена: 700 рублей </h2>
+<button class="favorite-btn" type="button">&#9825;</button>
+</div>
+<div class="product" data-favorite="false" data-figura="true" data-other="false" data-price='560'>
+<img src="ImagesProekt/Frisk.png" width="20%" alt="Брелок">
+<h1> Фигурка "Фриск"</h1>
+<h2> Цена: 560 рублей </h2>
+<button class="favorite-btn" type="button">&#9825;</button>
+</div>
+<div class="product" data-favorite="false" data-figura="false" data-other="true" data-price='1000'>
+<img src="ImagesProekt/Toriel.png" width="20%" alt="Подушка">
+<h1> Плюшевая "Ториэль"</h1>
+<h2> Цена: 1000 рублей </h2>
+<button class="favorite-btn" type="button">&#9825;</button>
+</div>
+<div class="product" data-favorite="false" data-figura="false" data-other="true" data-price='1000'>
+<img src="ImagesProekt/Papyrus.png" width="20%" alt="Фигурка">
+<h1> Плюшевый "Папирус Undertale"</h1>
+<h2> Цена: 1000 рублей </h2>
+<button class="favorite-btn" type="button">&#9825;</button>
+</div>
+<div class="product" data-favorite="false" data-figura="false" data-other="true" data-price='1400'>
+<img src="ImagesProekt/Shirt.png" width="20%" alt="Чашка">
+<h1> Футболка "Cool Dude" </h1>
+<h2> Цена: 1400 рублей </h2>
+<button class="favorite-btn" type="button">&#9825;</button>
+</div>
+<div class="product" data-favorite="false" data-figura="false" data-other="true">
+<img src="ImagesProekt/Hoody.png" width="20%" alt="Толстовка">
+<h1> Толстовка "Sans Skeleton"</h1>
+<h2> Цена: 2300 рублей </h2>
+<button class="favorite-btn" type="button">&#9825;</button>
+</div>
+</div>
+</main>
+<footer>
+  <hr>
+  <section>
+  <p class="cent"> Все права защищены SergeyTsybarev &#169;</p>
+  <br>
+</section>
+<section class='inform'>
+  <h3> Контактная информация:</h3>
+  <a href='mailto:sergeytsybarev17@gmail.com'>sergeytsybarev17</a>
+  <br>
+  <a href='tel:+89508643363'>Тел. +89508643363</a>
+  <br>
+</section>
+<section>
+  <a href='#top'><p text-align='left'> &uarr;НАВЕРХ&uarr;</p></a>
+</section>
+</footer>
+
+<script src="script.js"></script>
+<script src="script-slider.js"></script>
+</body>
+</html>
