@@ -39,17 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
             if (ShowFigura) {
                 products.forEach(product => {
                         let isFigura = JSON.parse(product.getAttribute('data-figura'));
-                        if (!isFigura) {
-                            product.style.display = 'none';
-                        }
-                    });
-            } else {
-                products.forEach(product => {
-                        product.style.display = 'block';
-                    });
-            }
-        updateButtonColor();
-    });
+                        if (!isFigura || (ShowFavorite && !JSON.parse(product.getAttribute('data-favorite'))) ) {
+               product.style.display = 'none';
+           }
+       });
+   } else {
+       products.forEach(product => {
+           if (!ShowFavorite || JSON.parse(product.getAttribute('data-favorite'))) {
+               product.style.display = 'block';
+           }
+       });
+   }
+   updateButtonColor();
+});
 
 
     ShowotherBtn.addEventListener('click', () => {
@@ -58,19 +60,20 @@ document.addEventListener('DOMContentLoaded', function() {
             if (Showother) {
                 products.forEach(product => {
                     let isOther = JSON.parse(product.getAttribute('data-other'));
-                    if (!isOther) {
-                        product.style.display = 'none';
-                    }
-                });
+                    if (!isOther || (ShowFavorite && !JSON.parse(product.getAttribute('data-favorite')))) {
+                product.style.display = 'none';
             }
-            else {
-                products.forEach(product => {
-                    product.style.display = 'block';
-                });
+        });
+    } else {
+        products.forEach(product => {
+            if (!ShowFavorite || JSON.parse(product.getAttribute('data-favorite'))) {
+                product.style.display = 'block';
+            }
+        });
+    }
 
-            }
-            updateButtonColor();
-    });
+    updateButtonColor();
+});
 
 
     products.forEach(product => {
